@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class Recursive{
+public static String palindrome(String str,int first,int last){
+if(first>last)    return "String is palindrome";
+else if(str.charAt(first) == str.charAt(last))     return palindrome(str,first+1,last-1);
+else  return "String is not palindrome";
+}public static void main(String [] args){
+    String str = "YATAY YATAY";
+            System.out.println(palindrome(str,0,str.length()-1));
+}
+}
+//Palindrom,hem sağ taraftan hem de sol taraftan okunduğunda aynı olan kelime veya kelime gruplarıdır.
