@@ -1,0 +1,8 @@
+public class Recursive{
+public static int total(int number){
+if(number==1)      return 1;
+else return number+total(number-1);
+}public static void main(String [] args){
+    System.out.println("total="+total(100));
+}
+}
