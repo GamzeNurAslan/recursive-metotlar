@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class Recursive{
+public static int factoriyel(int number){
+if(number<=1)    return 1;
+else return number*factoriyel(number-1);
+}public static void main(String [] args){
+    Scanner k=new Scanner(System.in);
+    System.out.print("Number=");
+    int number=k.nextInt();
+System.out.println(factoriyel(number));
+}
+}
