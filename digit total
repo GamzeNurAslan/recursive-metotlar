@@ -1,0 +1,10 @@
+/*import java.util.Scanner;
+public class Recursive{
+    //Girilen sayinin basamaklari toplamini bulma
+public static int digitTotal(int number){
+     if(number == 0)    return 0;
+     else   return number%10+digitTotal(number/10);
+}public static void main(String [] args){
+            System.out.println(digitTotal(65));
+}
+}*/
