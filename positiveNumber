@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Recursive{
+public static int positiveNumber(int [] series,int piece){
+   if(piece == series.length)  return 0;
+   else{
+   if(series[piece]>0)   return 1+positiveNumber(series,piece+1);
+   return positiveNumber(series,piece+1);
+   }
+}public static void main(String [] args){
+ int [] series={1,2,3,-12,27,-10,-13,19};
+            System.out.println(positiveNumber(series,0));
+            //Serideki pozitif sayıların toplam adetini bulma
+}
+        }
