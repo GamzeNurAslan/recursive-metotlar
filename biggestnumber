@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Recursive{
+public static int biggest(int [] series,int index,int sayac){
+   if(sayac==series.length)      return index;
+   else{
+   if(series[sayac]>series[index])    index=sayac;
+   return biggest(series,index,sayac+1);
+   }
+}public static void main(String [] args){
+int [] series={1,78,908,4567,999};
+//dizideki en büyük sayıyının bulunduğu indis'i geri döndürsün
+            System.out.println(biggest(series,0,0));
+}
+        }
