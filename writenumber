@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Recursive{
+public static void writename(String ad,int number){
+    if(number>0){
+        System.out.println(ad);
+        writename(ad,number-1);
+    }
+}public static void main(String [] args){
+    Scanner k=new Scanner(System.in);
+            System.out.print("ad=");
+             String ad=k.nextLine();
+            System.out.print("number=");
+             int number=k.nextInt();
+              writename(ad,number);
+}
+        }
