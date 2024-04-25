@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Recursive{
+public static boolean symmetrical(int [] series,int first,int last){
+if(first>=last)     return true;
+else{
+if(series[first] != series[last])   return false;
+}
+return symmetrical(series,first+1,last-1);
+}public static void main(String [] args){
+int [] series={2,3,5,67,67,5,3,2};
+            System.out.println(symmetrical(series,0,series.length-1));
+}
+        }
