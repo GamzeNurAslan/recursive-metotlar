@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Recursive{
+public static int biggestNumber(int [] series,int i,int sayac){
+if(sayac == series.length)   return series[i];
+else{
+if(series[sayac]>series[i])    return biggestNumber(series,i+1,sayac+1);
+return biggestNumber(series,i,sayac+1);
+}
+}
+public static void main(String [] args){
+int [] series={1,3,5,-90,67,53,66};
+            System.out.println(biggestNumber(series,0,0));
+}}
