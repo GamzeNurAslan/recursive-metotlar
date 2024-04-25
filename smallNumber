@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Recursive{
+public static int smallNumber(String word,int index){
+if(index==word.length())  return 0;
+else{
+if(word.charAt(index)>='a' && word.charAt(index)<='z'){
+return   1+smallNumber(word,index+1);
+}else{
+    return smallNumber(word,index+1);
+}}
+}
+public static void main(String [] args){
+            System.out.println(smallNumber("Gamze Nur Aslan",0));
+}
+}
