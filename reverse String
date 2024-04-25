@@ -1,0 +1,13 @@
+import java.util.Scanner;
+import java.util.Arrays;
+public class Recursive{
+public static String reverseString(String word,int sayac){
+if(sayac==0)   return String.valueOf(word.charAt(sayac));
+else{
+return   word.charAt(sayac)+reverseString(word,sayac-1);
+}
+}public static void main(String [] args){
+  String word="gamze nur aslan";
+            System.out.println(reverseString(word,word.length()-1));
+}
+}
