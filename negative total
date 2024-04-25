@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Recursive{
+    //Seri içindeki negatif sayilarin toplami
+public static int negativeT(int [] series,int i){
+if(i == series.length)     return 0;
+else{
+if(series[i]<0)    return series[i]+negativeT(series,i+1);
+else    return negativeT(series,i+1);
+}
+}public static void main(String [] args){
+int [] series = {1,-10,26,-90,100,0,-27};
+            System.out.println(negativeT(series,0));
+}
+}
