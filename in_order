@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Recursive{
+public static boolean in_order(int [] series,int index){
+if(index==series.length-1)    return true;
+else if(series[0]>series[1]){
+   if(series[index]>series[index+1])      return in_order(series,index+1);
+   else   return false;
+}else{
+   if(series[index]<series[index+1])    return in_order(series,index+1);
+   else   return false;
+}
+}public static void main(String [] args){
+int [] series={100,101,102,103,109};
+            System.out.println(in_order(series,0));
+}
+        }
