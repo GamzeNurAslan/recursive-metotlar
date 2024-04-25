@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class Recursive{
+public static int digit(int number){
+if(number==0)  return 0;
+else return 1+digit(number/10);
+}
+public static void main(String [] args){
+    Scanner k=new Scanner(System.in);
+    int number=k.nextInt();
+    System.out.println("The number has "+digit(number)+" digits:)");
+}
+        }
