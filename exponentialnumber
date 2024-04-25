@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Recursive{
+public static int usAlma(int taban,int us){
+if(us==1)  return taban;
+else return taban*usAlma(taban,us-1);
+}public static void main(String [] args){
+    Scanner k=new Scanner(System.in);
+            System.out.print("taban=");
+            int taban=k.nextInt();
+            System.out.print("us=");
+            int us=k.nextInt();
+            System.out.println(taban+"^"+us+"="+usAlma(taban,us));
+}
+        }
